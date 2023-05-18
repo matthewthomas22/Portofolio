@@ -1,17 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Navbar />
+  <Header></Header>
+  <Relasi />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from "./components/Navbar.vue";
+import Header from "./components/Header.vue";
+import Relasi from "./components/Relasi.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Navbar,
+    Header,
+    Relasi,
+  },
+};
 </script>
 
 <style>
@@ -21,6 +26,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+body {
+  margin: 0;
 }
 </style>
